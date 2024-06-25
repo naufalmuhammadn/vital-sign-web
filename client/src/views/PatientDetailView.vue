@@ -114,10 +114,10 @@
             <tbody>
               <tr v-for="vital in patient.vitalSign" :key="vital._id" class="text-center">
                 <td class="p-3 border-t">{{ formatDate(vital.createdAt) }}</td>
-                <td class="p-3 border-t">{{ vital.heartRate }}</td>
-                <td class="p-3 border-t">{{ vital.bloodPressure.systolic }}/{{ vital.bloodPressure.diastolic }}</td>
-                <td class="p-3 border-t">{{ vital.bodyTemperature }}</td>
-                <td class="p-3 border-t">{{ vital.oxygenSaturation }}</td>
+                <td class="p-3 border-t">{{ vital.heartRate }} bpm</td>
+                <td class="p-3 border-t">{{ vital.bloodPressure.systolic }}/{{ vital.bloodPressure.diastolic }} mmHg</td>
+                <td class="p-3 border-t">{{ vital.bodyTemperature }} °C</td>
+                <td class="p-3 border-t">{{ vital.oxygenSaturation }} %</td>
               </tr>
             </tbody>
           </table>
