@@ -199,7 +199,6 @@ export default defineComponent({
     const handleSubmit = async (): Promise<void> => {
       axios.post(import.meta.env.VITE_SERVER_URL + `/api/v1/patient/${patient.value?._id}/vs`, vitalSignForm.value)
         .then(() => {
-          console.log('Vital Sign form:', vitalSignForm.value);
           Object.assign(vitalSignForm, initialVitalSignForm);
           closeModal();
           location.reload();
